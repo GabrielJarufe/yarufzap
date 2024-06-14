@@ -52,9 +52,6 @@ CREATE TABLE IF NOT EXISTS TB_MESSAGE(
     FOREIGN KEY (chat_id) REFERENCES TB_CHAT(chat_id)
 );
 
-INSERT INTO TB_USER
-	VALUES ("gabrieljarufe1@gmail.com",TRUE,"Jarufee", "#vodka", "jarapencas", "Kaizen","GAJ@2003");
-
 SELECT * FROM TB_INVITE;
 SELECT * FROM TB_CHAT;
 SELECT * FROM TB_CHAT_MEMBER;
