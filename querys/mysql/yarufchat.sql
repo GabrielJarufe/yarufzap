@@ -4,11 +4,10 @@ USE yarufzap;
 
 CREATE TABLE IF NOT EXISTS TB_USER(
 	email VARCHAR(75) PRIMARY KEY,
-    is_email_validated BOOLEAN DEFAULT FALSE,
     login_name VARCHAR(50),
-    tag VARCHAR(10) NULL DEFAULT 'BR1',
+    tag VARCHAR(10) DEFAULT 'BR1',
     nickname VARCHAR(50),
-    user_status VARCHAR(300) NULL DEFAULT "hey there! I'm using yaruzap",
+    user_status VARCHAR(300) DEFAULT "hey there! I'm using yarufchat",
     user_password VARCHAR(100)
 );
 
