@@ -1,0 +1,124 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="supported-color-schemes" content="light dark" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style type="text/css">
+      body {
+        margin: 0;
+        background-color: #f9f9f9;
+      }
+      table {
+        border-spacing: 0;
+      }
+      td {
+        padding: 0;
+      }
+      img {
+        border: 0;
+      }
+
+      .center-text {
+        text-align: center;
+      }
+
+      .wrapper {
+        width: 100%;
+        table-layout: fixed;
+        background-color: #f9f9f9;
+        padding-bottom: 60px;
+      }
+
+      .main {
+        background-color: #f9f9f9;
+        margin: 0 auto;
+        width: 100%;
+        max-width: 600px;
+        border-spacing: 0;
+        font-family: sans-serif;
+        padding: 10px 40px 20px 40px;
+      }
+
+      .purple-background {
+        background-color: #2b0747 !important;
+      }
+
+      .purple-color {
+        color: #2b0747 !important;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        .purple-background {
+          background-color: #2b0747 !important;
+        }
+        .purple-color {
+          color: #2b0747 !important;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="center-text wrapper">
+      <table class="main">
+        <!-- LOGO SECTION -->
+        <tr>
+          <td>
+            <table
+              width="100%"
+              style="
+                background: linear-gradient(#2b0747, #2b0747);
+                background-color: #2b0747;
+              "
+            >
+              <tr>
+                <td>
+                  <a href="">
+                    <img
+                      src="https://i.imgur.com/30kzAIw.png"
+                      alt=""
+                      width="150"
+                      style="padding-top: 15px; padding-bottom: 15px"
+                      title="YarufChat"
+                    />
+                  </a>
+                  <!-- <h1>YarufChat</h1> -->
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <!-- <tr>
+          <td height="1" style="background-color: #ccc"></td>
+        </tr> -->
+        <tr style="background-color: #fff">
+          <td style="color: #393d44; padding-bottom: 50px; padding-top: 30px">
+            <h4>Email Verification Code</h4>
+            <p style="margin-bottom: 0; font-size: 14px">
+              Enter this code on the identity verification screen:
+            </p>
+            <br />
+            <h1
+              class="purple-color"
+              style="margin: 0 0 10px 0; letter-spacing: 2px"
+              th:text="${token}"
+            >
+              538192
+            </h1>
+            <hr width="25%" size="1" color="#ccc" noshade />
+            <p style="font-size: 11px; margin-top: 15px">
+              This code will expire shortly.
+            </p>
+            <p style="font-size: 11px">
+              If you can’t find the identity verification screen,
+              <a href="">try logging in again.</a>
+            </p>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>
